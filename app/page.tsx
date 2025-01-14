@@ -1,12 +1,14 @@
 import React from 'react'
 import InfoBoxes from '@/components/info-boxes'
-
+import Hero from '@/components/hero'
+import HeroProperties from '@/components/hero-properties'
 export default function HomePage( {children}:{children:React.ReactNode} ) {
   return (
     <>
-<h1>Root</h1>
     <div>
+      <Hero/>
       <InfoBoxes/>
+    <HeroProperties/>
     {children}
     </div>
     </>
